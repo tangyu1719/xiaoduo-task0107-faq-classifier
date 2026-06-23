@@ -187,7 +187,7 @@
 
 **落地实现**
 
-- 新增 `prompts/classification_prompt_v3_implicit.xml`
+- 新增 `prompts/classification_prompt_v3_implicit.md`
 - 显式写入：
   - `处理 / 售后 / 恢复 / 其中一件` 往往隐含退款退货语境
   - `门牌 / 门号 / 楼栋 / 填错了 / 改地址` 往往隐含物流语境
@@ -653,9 +653,9 @@ py -m uvicorn app:app --host 127.0.0.1 --port 8017
 - 服务层：`task1_service.py`
 - 演示入口：`app.py`
 - 规则配置：`task1_rules.json`
-- Prompt v1：`prompts/classification_prompt_v1_baseline.xml`
-- Prompt v2（还原版）：`prompts/classification_prompt_v2_structured.xml`
-- Prompt v3：`prompts/classification_prompt_v3_implicit.xml`
+- Prompt v1：`prompts/classification_prompt_v1_baseline.md`
+- Prompt v2（还原版）：`prompts/classification_prompt_v2_structured.md`
+- Prompt v3：`prompts/classification_prompt_v3_implicit.md`
 - A/B 评测：`llm_ab_eval.py`
 - 压力测试：`llm_stress_test.py`
 - Prompt 演进表：`docs/prompt_evolution_table_20260623.md`

@@ -2,8 +2,8 @@
 
 ## 文件
 - A/B 评测脚本：`F:\java\AIOPS\SuperBizAgent-release-2026-01-02\demo_wendanghua\SuperBizAgent-AgentFramework\web_rebuild_v2\task0107_review\llm_ab_eval.py`
-- Prompt v1：`F:\java\AIOPS\SuperBizAgent-release-2026-01-02\demo_wendanghua\SuperBizAgent-AgentFramework\web_rebuild_v2\task0107_review\prompts\classification_prompt_v1_baseline.xml`
-- Prompt v2：`F:\java\AIOPS\SuperBizAgent-release-2026-01-02\demo_wendanghua\SuperBizAgent-AgentFramework\web_rebuild_v2\task0107_review\prompts\classification_prompt_v2_structured.xml`
+- Prompt v1：`prompts/classification_prompt_v1_baseline.md`
+- Prompt v2：`prompts/classification_prompt_v2_structured.md`
 - 测试集：`F:\java\AIOPS\SuperBizAgent-release-2026-01-02\demo_wendanghua\SuperBizAgent-AgentFramework\XiaoDuo\yuanwen\task1_test_samples.json`
 
 ## A/B 结果

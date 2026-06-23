@@ -21,9 +21,9 @@ def load_json(path: Path) -> Any:
 
 def load_prompt(version: str) -> str:
     mapping = {
-        "v1": PROMPT_DIR / "classification_prompt_v1_baseline.xml",
-        "v2": PROMPT_DIR / "classification_prompt_v2_structured.xml",
-        "v3": PROMPT_DIR / "classification_prompt_v3_implicit.xml",
+        "v1": PROMPT_DIR / "classification_prompt_v1_baseline.md",
+        "v2": PROMPT_DIR / "classification_prompt_v2_structured.md",
+        "v3": PROMPT_DIR / "classification_prompt_v3_implicit.md",
     }
     path = mapping[version]
     return path.read_text(encoding="utf-8")
