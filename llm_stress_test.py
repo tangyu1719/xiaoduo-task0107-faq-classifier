@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any, Dict, List
 
-from task0107_review.task1_service import ServiceConfig, Task1ClassifierService
+from task1_service import ServiceConfig, Task1ClassifierService
 
 
 def load_json(path: Path) -> Any:

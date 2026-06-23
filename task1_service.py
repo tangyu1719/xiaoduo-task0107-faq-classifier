@@ -13,7 +13,7 @@ from typing import Any, Dict, List, Optional
 
 from openai import OpenAI
 
-from task0107_review.classifier_improved import classify_question, load_json, load_rules
+from classifier_improved import classify_question, load_json, load_rules
 
 
 @dataclass

@@ -13,7 +13,7 @@ from typing import Any, Dict, List, Optional
 
 from openai import OpenAI
 from pydantic import BaseModel, Field, ValidationError
-from task0107_review.llm_ab_eval import render_messages
+from llm_ab_eval import render_messages
 
 
 DEFAULT_RULES_PATH = Path(__file__).with_name("task1_rules.json")
