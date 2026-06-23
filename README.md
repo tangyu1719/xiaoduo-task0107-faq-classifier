@@ -315,9 +315,9 @@
 
 本次最核心的代码文件是：
 
-- 核心分类逻辑：`task0107_review/classifier_improved.py`
-- 服务层 / harness：`task0107_review/task1_service.py`
-- Prompt A/B 评测：`task0107_review/llm_ab_eval.py`
+- 核心分类逻辑：`classifier_improved.py`
+- 服务层 / harness：`task1_service.py`
+- Prompt A/B 评测：`llm_ab_eval.py`
 
 ---
 
@@ -355,7 +355,7 @@
 #### v2 structured（还原版）
 
 - system / user 分离
-- XML 分层
+- Markdown 分块结构
 - 分类定义 `categories`
 - 基础边界规则 `boundary_rules`
 - 少量基础 few-shot
@@ -375,7 +375,7 @@
 | 版本 | 设计特点 | 解决的问题 | 已知短板 | 关键结果 |
 |---|---|---|---|---|
 | v1 baseline | 单条 user prompt，只有标签列表和“只回复类别名称” | 最小可运行基线 | 输出协议脆弱；边界规则缺失；多意图和隐式语义几乎无约束 | 30 条金标：13.3%，无效输出率 83.3% |
-| v2 structured（还原版） | system/user 分离；XML 分层；分类定义；基础边界规则；少量 few-shot | 解决输出失控、基础边界不清问题 | 对隐式投诉、隐式退款、隐式物流理解仍不稳定 | 20 条隐式边界集：95.0% |
+| v2 structured（还原版） | system/user 分离；Markdown 分块；分类定义；基础边界规则；少量 few-shot | 解决输出失控、基础边界不清问题 | 对隐式投诉、隐式退款、隐式物流理解仍不稳定 | 20 条隐式边界集：95.0% |
 | v3 implicit reasoning | 在 v2 基础上新增 `boundary_conditions`；显式写潜在语义推理；补充隐式 few-shot | 解决“没有显式分类词时如何还原语境”的问题 | prompt 更长、token 成本更高 | 30 条金标 llm-only：100.0%；120 条增强集 llm-only：100.0% |
 
 ---
@@ -417,7 +417,7 @@
 
 **改动理由（从代码和情境分析出发）**
 
-- 客服 FAQ 是一个非常标准的分类问题，天然适合结构化 prompt
+- 客服 FAQ 是一个非常标准的分类问题，天然适合分块结构化 Prompt
 - 原始代码和附件文档脱节，因此 v2 要先把文档规则真正用起来
 
 **测试结果**
