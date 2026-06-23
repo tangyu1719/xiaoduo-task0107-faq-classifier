@@ -2,6 +2,16 @@
 
 本交付仅针对 `TASK1`：对原始 `classifier.py` 做 Code Review、Prompt 改进、评测验证和工程化增强。
 
+## 仓库导航
+
+- 评审入口：`README.md`
+- 分类核心：`classifier_improved.py`
+- 服务层封装：`task1_service.py`
+- Prompt 版本：`prompts/`
+- 评测与压测报告：`docs/`
+- 规则配置：`task1_rules.json`
+- 配置示例：`config.example.json`
+
 ---
 
 ## 第一章：Code Review
@@ -159,7 +169,7 @@
 
 **落地实现**
 
-- 新增 `classification_prompt_v3_implicit.xml`
+- 新增 `prompts/classification_prompt_v3_implicit.xml`
 - 显式写入：
   - `处理 / 售后 / 恢复 / 其中一件` 往往隐含退款退货语境
   - `门牌 / 门号 / 楼栋 / 填错了 / 改地址` 往往隐含物流语境
@@ -547,10 +557,10 @@
 #### 规则版分类
 
 ```bash
-py -X utf8 task0107_review\classifier_improved.py \
+py -X utf8 classifier_improved.py \
   F:\java\AIOPS\SuperBizAgent-release-2026-01-02\demo_wendanghua\SuperBizAgent-AgentFramework\XiaoDuo\yuanwen\task1_test_samples.json \
   output.json \
-  --rules task0107_review\task1_rules.json \
+  --rules task1_rules.json \
   --no-llm
 ```
 
@@ -561,15 +571,15 @@ set ARK_API_KEY=你的Key
 set ARK_BASE_URL=https://ark.cn-beijing.volces.com/api/v3
 set CLASSIFIER_MODEL=你的模型ID
 
-py -X utf8 task0107_review\llm_ab_eval.py --version v1 --samples F:\...\task1_test_samples.json --output v1.json
-py -X utf8 task0107_review\llm_ab_eval.py --version v2 --samples F:\...\task1_test_samples.json --output v2.json
-py -X utf8 task0107_review\llm_ab_eval.py --version v3 --samples F:\...\task1_test_samples.json --output v3.json
+py -X utf8 llm_ab_eval.py --version v1 --samples F:\...\task1_test_samples.json --output v1.json
+py -X utf8 llm_ab_eval.py --version v2 --samples F:\...\task1_test_samples.json --output v2.json
+py -X utf8 llm_ab_eval.py --version v3 --samples F:\...\task1_test_samples.json --output v3.json
 ```
 
 #### 启动界面
 
 ```bash
-py -m uvicorn task0107_review.app:app --host 127.0.0.1 --port 8017
+py -m uvicorn app:app --host 127.0.0.1 --port 8017
 ```
 
 访问：`http://127.0.0.1:8017`
@@ -621,14 +631,14 @@ py -m uvicorn task0107_review.app:app --host 127.0.0.1 --port 8017
 ## 附：关键文件
 
 - 原始附件目录：`F:\java\AIOPS\SuperBizAgent-release-2026-01-02\demo_wendanghua\SuperBizAgent-AgentFramework\XiaoDuo\yuanwen`
-- 分类核心：`task0107_review\classifier_improved.py`
-- 服务层：`task0107_review\task1_service.py`
-- UI：`task0107_review\app.py`
-- 规则配置：`task0107_review\task1_rules.json`
-- Prompt v1：`task0107_review\prompts\classification_prompt_v1_baseline.xml`
-- Prompt v2（还原版）：`task0107_review\prompts\classification_prompt_v2_structured.xml`
-- Prompt v3：`task0107_review\prompts\classification_prompt_v3_implicit.xml`
-- A/B 评测：`task0107_review\llm_ab_eval.py`
-- 压力测试：`task0107_review\llm_stress_test.py`
-- Prompt 演进表：`task0107_review\docs\prompt_evolution_table_20260623.md`
-- 配置示例：`task0107_review\config.example.json`
+- 分类核心：`classifier_improved.py`
+- 服务层：`task1_service.py`
+- 演示入口：`app.py`
+- 规则配置：`task1_rules.json`
+- Prompt v1：`prompts/classification_prompt_v1_baseline.xml`
+- Prompt v2（还原版）：`prompts/classification_prompt_v2_structured.xml`
+- Prompt v3：`prompts/classification_prompt_v3_implicit.xml`
+- A/B 评测：`llm_ab_eval.py`
+- 压力测试：`llm_stress_test.py`
+- Prompt 演进表：`docs/prompt_evolution_table_20260623.md`
+- 配置示例：`config.example.json`
