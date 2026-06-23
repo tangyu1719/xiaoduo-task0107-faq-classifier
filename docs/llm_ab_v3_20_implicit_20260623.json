@@ -1,0 +1,182 @@
+[
+  {
+    "id": 2001,
+    "question": "这单我只想撤掉其中一部分，可以吗",
+    "label": "退款退货",
+    "predicted_category": "退款退货",
+    "raw_output": "退款退货",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2002,
+    "question": "已经开的售后单还能收回来吗",
+    "label": "退款退货",
+    "predicted_category": "退款退货",
+    "raw_output": "退款退货",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2003,
+    "question": "这笔处理我想只保留一个，其余取消行吗",
+    "label": "退款退货",
+    "predicted_category": "退款退货",
+    "raw_output": "退款退货</s>",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2004,
+    "question": "后面又不想继续这次售后了，能恢复原样吗",
+    "label": "退款退货",
+    "predicted_category": "退款退货",
+    "raw_output": "退款退货",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2005,
+    "question": "这单只动其中一件，别的别处理，可以吗",
+    "label": "退款退货",
+    "predicted_category": "退款退货",
+    "raw_output": "退款退货</s>",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2006,
+    "question": "我后悔发起这个售后了，还能改回去吗",
+    "label": "退款退货",
+    "predicted_category": "退款退货",
+    "raw_output": "退款退货</s>",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2007,
+    "question": "门牌写错了一位，现在改还来得及吗",
+    "label": "物流查询",
+    "predicted_category": "物流查询",
+    "raw_output": "物流查询",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2008,
+    "question": "收件信息少写了一行，还能补上吗",
+    "label": "物流查询",
+    "predicted_category": "物流查询",
+    "raw_output": "物流查询",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2009,
+    "question": "送过来前我想换个收件地点，可以吗",
+    "label": "物流查询",
+    "predicted_category": "物流查询",
+    "raw_output": "物流查询",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2010,
+    "question": "现在把楼栋号改掉还来得及吗",
+    "label": "物流查询",
+    "predicted_category": "物流查询",
+    "raw_output": "物流查询",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2011,
+    "question": "配送前能把地址末尾那段修一下吗",
+    "label": "物流查询",
+    "predicted_category": "物流查询",
+    "raw_output": "物流查询",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2012,
+    "question": "我把收件门牌填错了，怎么补救",
+    "label": "物流查询",
+    "predicted_category": "物流查询",
+    "raw_output": "物流查询",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2013,
+    "question": "整个处理过程都让我有点崩溃",
+    "label": "投诉建议",
+    "predicted_category": "投诉建议",
+    "raw_output": "投诉建议",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2014,
+    "question": "这次售后体验真的让我很无语",
+    "label": "投诉建议",
+    "predicted_category": "投诉建议",
+    "raw_output": "投诉建议",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2015,
+    "question": "这个版本更适合通勤还是户外",
+    "label": "商品咨询",
+    "predicted_category": "商品咨询",
+    "raw_output": "商品咨询",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2016,
+    "question": "这款穿起来更贴身还是更松一点",
+    "label": "商品咨询",
+    "predicted_category": "商品咨询",
+    "raw_output": "商品咨询</s>",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2017,
+    "question": "旧号码作废了，身份校验怎么继续",
+    "label": "账号问题",
+    "predicted_category": "账号问题",
+    "raw_output": "账号问题",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2018,
+    "question": "联系信息换了以后，验证流程要怎么走",
+    "label": "账号问题",
+    "predicted_category": "账号问题",
+    "raw_output": "账号问题",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2019,
+    "question": "我再想想吧",
+    "label": "其他",
+    "predicted_category": "其他",
+    "raw_output": "其他</s>",
+    "ok": true,
+    "prompt_version": "v3"
+  },
+  {
+    "id": 2020,
+    "question": "先这样，回头再说",
+    "label": "其他",
+    "predicted_category": "其他",
+    "raw_output": "其他</s>",
+    "ok": true,
+    "prompt_version": "v3"
+  }
+]

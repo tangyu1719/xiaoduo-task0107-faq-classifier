@@ -1,0 +1,11 @@
+{
+  "provider": {
+    "api_key_env": "ARK_API_KEY",
+    "base_url_env": "ARK_BASE_URL",
+    "model_env": "CLASSIFIER_MODEL"
+  },
+  "defaults": {
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "model": "your-model-id"
+  }
+}

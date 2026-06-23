@@ -1,0 +1,61 @@
+{
+  "categories": [
+    "退款退货",
+    "物流查询",
+    "账号问题",
+    "商品咨询",
+    "投诉建议",
+    "其他"
+  ],
+  "rules": [
+    {
+      "name": "greeting_or_ack",
+      "category": "其他",
+      "type": "regex",
+      "patterns": ["^(你好|您好|谢谢|嗯嗯|好的|在吗|哈喽)$", "^[?？!！。、~·…\\-—_\\s]+$"],
+      "reason": "greeting / punctuation"
+    },
+    {
+      "name": "process_complaint",
+      "category": "投诉建议",
+      "type": "contains_any",
+      "keywords": ["退货流程", "退款流程", "退货操作", "退款操作", "物流流程", "快递流程", "太麻烦", "麻烦", "搞不懂", "质量有问题", "破质量", "太差", "不满意", "建议", "投诉", "举报"],
+      "reason": "process / service / quality complaint"
+    },
+    {
+      "name": "refund_return",
+      "category": "退款退货",
+      "type": "contains_any",
+      "keywords": ["退款", "退货", "换货", "退掉", "退回", "取消退货", "取消退款", "退邮费", "申请退款", "退款什么时候", "多久到账", "退钱", "只退", "退一个", "部分退", "退的这个订单"],
+      "reason": "refund / return / partial return"
+    },
+    {
+      "name": "account_issue",
+      "category": "账号问题",
+      "type": "contains_any",
+      "keywords": ["密码", "登录", "手机号", "绑定", "冻结", "解封", "异地登录", "账号", "账户", "安全"],
+      "reason": "account / login / security"
+    },
+    {
+      "name": "logistics_issue",
+      "category": "物流查询",
+      "type": "contains_any",
+      "keywords": ["快递", "物流", "配送", "包裹", "签收", "派送", "快递柜", "寄错地址", "改派", "到哪", "到没到", "多久到"],
+      "reason": "logistics / delivery / parcel"
+    },
+    {
+      "name": "product_inquiry",
+      "category": "商品咨询",
+      "type": "contains_any",
+      "keywords": ["支持", "规格", "尺码", "颜色", "材质", "真皮", "硅胶", "塑料", "降噪", "库存", "价格", "补货", "参数", "功能", "充电宝", "耳机", "手机壳", "鞋", "包", "商品", "商品咨询"],
+      "reason": "product inquiry"
+    },
+    {
+      "name": "empty_or_short_other",
+      "category": "其他",
+      "type": "length_le",
+      "max_len": 6,
+      "reason": "short ambiguous input"
+    }
+  ]
+}

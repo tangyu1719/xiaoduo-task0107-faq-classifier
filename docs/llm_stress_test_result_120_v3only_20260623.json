@@ -1,0 +1,2335 @@
+{
+  "sample_count": 120,
+  "concurrency": 12,
+  "prompt_version": "v3",
+  "keyword_violation_count": 4,
+  "accuracy": 100.0,
+  "invalid_output_rate": 0.0,
+  "llm_hit_rate": 100.0,
+  "degraded_fallback_rate": 0.0,
+  "throughput_rps": 2.57,
+  "total_elapsed_sec": 46.7,
+  "latency_avg_ms": 4420.74,
+  "latency_p50_ms": 4314.65,
+  "latency_p95_ms": 5831.1,
+  "latency_p99_ms": 6680.8,
+  "prompt_tokens": 155393,
+  "completion_tokens": 8698,
+  "total_tokens": 164091,
+  "avg_total_tokens_per_request": 1367.42,
+  "label_metrics": {
+    "退款退货": {
+      "total": 22,
+      "correct": 22,
+      "accuracy": 100.0
+    },
+    "物流查询": {
+      "total": 22,
+      "correct": 22,
+      "accuracy": 100.0
+    },
+    "账号问题": {
+      "total": 18,
+      "correct": 18,
+      "accuracy": 100.0
+    },
+    "商品咨询": {
+      "total": 18,
+      "correct": 18,
+      "accuracy": 100.0
+    },
+    "投诉建议": {
+      "total": 18,
+      "correct": 18,
+      "accuracy": 100.0
+    },
+    "其他": {
+      "total": 22,
+      "correct": 22,
+      "accuracy": 100.0
+    }
+  },
+  "wrong_cases": [],
+  "results": [
+    {
+      "id": 1001,
+      "question": "尾款会原路返回吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 62,
+        "total_tokens": 1357
+      },
+      "error": "",
+      "latency_ms": 4800.77,
+      "ok": true
+    },
+    {
+      "id": 1002,
+      "question": "那笔款多久能回到卡里",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 59,
+        "total_tokens": 1355
+      },
+      "error": "",
+      "latency_ms": 5001.82,
+      "ok": true
+    },
+    {
+      "id": 1003,
+      "question": "售后款是不是会回到原支付方式",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 53,
+        "total_tokens": 1349
+      },
+      "error": "",
+      "latency_ms": 4975.56,
+      "ok": true
+    },
+    {
+      "id": 1004,
+      "question": "已付金额最后会回哪儿",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 49,
+        "total_tokens": 1344
+      },
+      "error": "",
+      "latency_ms": 5357.86,
+      "ok": true
+    },
+    {
+      "id": 1005,
+      "question": "刚提交的售后单能撤销吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 64,
+        "total_tokens": 1360
+      },
+      "error": "",
+      "latency_ms": 5683.77,
+      "ok": true
+    },
+    {
+      "id": 1006,
+      "question": "已经点了售后还能关掉吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 68,
+        "total_tokens": 1363
+      },
+      "error": "",
+      "latency_ms": 5103.17,
+      "ok": true
+    },
+    {
+      "id": 1007,
+      "question": "这单售后我想先取消行吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 83,
+        "total_tokens": 1379
+      },
+      "error": "",
+      "latency_ms": 5155.9,
+      "ok": true
+    },
+    {
+      "id": 1008,
+      "question": "售后流程开始后还能恢复吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 64,
+        "total_tokens": 1359
+      },
+      "error": "",
+      "latency_ms": 4883.96,
+      "ok": true
+    },
+    {
+      "id": 1009,
+      "question": "一笔里能只处理其中一件吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 98,
+        "total_tokens": 1394
+      },
+      "error": "",
+      "latency_ms": 5466.17,
+      "ok": true
+    },
+    {
+      "id": 1010,
+      "question": "同一单里我只想处理一部分行不行",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 92,
+        "total_tokens": 1389
+      },
+      "error": "",
+      "latency_ms": 5384.81,
+      "ok": true
+    },
+    {
+      "id": 1011,
+      "question": "这个单子能不能只关其中一件",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 87,
+        "total_tokens": 1383
+      },
+      "error": "",
+      "latency_ms": 5831.1,
+      "ok": true
+    },
+    {
+      "id": 1012,
+      "question": "我不想全处理，只动一个可以吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 148,
+        "total_tokens": 1445
+      },
+      "error": "",
+      "latency_ms": 6680.8,
+      "ok": true
+    },
+    {
+      "id": 1013,
+      "question": "这笔钱一般几天回卡",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 68,
+        "total_tokens": 1362
+      },
+      "error": "",
+      "latency_ms": 4314.65,
+      "ok": true
+    },
+    {
+      "id": 1014,
+      "question": "原先支付的那笔款会回原路吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 57,
+        "total_tokens": 1355
+      },
+      "error": "",
+      "latency_ms": 4128.77,
+      "ok": true
+    },
+    {
+      "id": 1015,
+      "question": "提交售后后又不想弄了，能收回吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 77,
+        "total_tokens": 1375
+      },
+      "error": "",
+      "latency_ms": 4257.28,
+      "ok": true
+    },
+    {
+      "id": 1016,
+      "question": "已经发起售后，现在想反悔行吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 87,
+        "total_tokens": 1385
+      },
+      "error": "",
+      "latency_ms": 4193.95,
+      "ok": true
+    },
+    {
+      "id": 1017,
+      "question": "运单怎么一直停在半路",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 58,
+        "total_tokens": 1353
+      },
+      "error": "",
+      "latency_ms": 4283.43,
+      "ok": true
+    },
+    {
+      "id": 1018,
+      "question": "那件东西现在走到哪一站了",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 38,
+        "total_tokens": 1334
+      },
+      "error": "",
+      "latency_ms": 3880.33,
+      "ok": true
+    },
+    {
+      "id": 1019,
+      "question": "送货员联系不上我，能改天上门吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 57,
+        "total_tokens": 1356
+      },
+      "error": "",
+      "latency_ms": 4811.71,
+      "ok": true
+    },
+    {
+      "id": 1020,
+      "question": "今天没人在家，能晚点送来吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 48,
+        "total_tokens": 1346
+      },
+      "error": "",
+      "latency_ms": 4498.79,
+      "ok": true
+    },
+    {
+      "id": 1021,
+      "question": "那件东西是不是到驿站了",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 66,
+        "total_tokens": 1361
+      },
+      "error": "",
+      "latency_ms": 4218.28,
+      "ok": true
+    },
+    {
+      "id": 1022,
+      "question": "为什么转运两天都没动",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 41,
+        "total_tokens": 1334
+      },
+      "error": "",
+      "latency_ms": 4011.88,
+      "ok": true
+    },
+    {
+      "id": 1023,
+      "question": "路上卡住了，是哪一步出了问题",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 95,
+        "total_tokens": 1390
+      },
+      "error": "",
+      "latency_ms": 4648.54,
+      "ok": true
+    },
+    {
+      "id": 1024,
+      "question": "送货员今天还会上门吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 69,
+        "total_tokens": 1363
+      },
+      "error": "",
+      "latency_ms": 4046.7,
+      "ok": true
+    },
+    {
+      "id": 1025,
+      "question": "运单显示到了本地，什么时候会送来",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 41,
+        "total_tokens": 1338
+      },
+      "error": "",
+      "latency_ms": 4683.77,
+      "ok": true
+    },
+    {
+      "id": 1026,
+      "question": "那个件是不是被放到驿站了",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 39,
+        "total_tokens": 1334
+      },
+      "error": "",
+      "latency_ms": 4152.48,
+      "ok": true
+    },
+    {
+      "id": 1027,
+      "question": "送到门口前会不会先电话联系",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 56,
+        "total_tokens": 1351
+      },
+      "error": "",
+      "latency_ms": 5089.27,
+      "ok": true
+    },
+    {
+      "id": 1028,
+      "question": "我写的门牌错了，还来得及改吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 60,
+        "total_tokens": 1358
+      },
+      "error": "",
+      "latency_ms": 4913.62,
+      "ok": true
+    },
+    {
+      "id": 1029,
+      "question": "那件东西现在还在路上吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 40,
+        "total_tokens": 1335
+      },
+      "error": "",
+      "latency_ms": 4579.87,
+      "ok": true
+    },
+    {
+      "id": 1030,
+      "question": "为什么一直显示运输中",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 58,
+        "total_tokens": 1351
+      },
+      "error": "",
+      "latency_ms": 3933.14,
+      "ok": true
+    },
+    {
+      "id": 1031,
+      "question": "今天能不能安排送来",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1292,
+        "completion_tokens": 43,
+        "total_tokens": 1335
+      },
+      "error": "",
+      "latency_ms": 4844.95,
+      "ok": true
+    },
+    {
+      "id": 1032,
+      "question": "送货员能不能明早再来",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 45,
+        "total_tokens": 1339
+      },
+      "error": "",
+      "latency_ms": 5913.01,
+      "ok": true
+    },
+    {
+      "id": 1033,
+      "question": "收不到校验码怎么办",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 35,
+        "total_tokens": 1328
+      },
+      "error": "",
+      "latency_ms": 4645.93,
+      "ok": true
+    },
+    {
+      "id": 1034,
+      "question": "总提示验证失败是怎么回事",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 75,
+        "total_tokens": 1368
+      },
+      "error": "",
+      "latency_ms": 6330.5,
+      "ok": true
+    },
+    {
+      "id": 1035,
+      "question": "想把资料里的联系号码换掉",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 53,
+        "total_tokens": 1348
+      },
+      "error": "",
+      "latency_ms": 4778.05,
+      "ok": true
+    },
+    {
+      "id": 1036,
+      "question": "个人资料里的号码如何改成新的",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 42,
+        "total_tokens": 1337
+      },
+      "error": "",
+      "latency_ms": 5915.76,
+      "ok": true
+    },
+    {
+      "id": 1037,
+      "question": "个人中心一直进不去",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 61,
+        "total_tokens": 1354
+      },
+      "error": "",
+      "latency_ms": 4184.76,
+      "ok": true
+    },
+    {
+      "id": 1038,
+      "question": "我的主页老是卡在验证那里",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 56,
+        "total_tokens": 1351
+      },
+      "error": "",
+      "latency_ms": 4012.28,
+      "ok": true
+    },
+    {
+      "id": 1039,
+      "question": "身份校验总过不了",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 106,
+        "total_tokens": 1399
+      },
+      "error": "",
+      "latency_ms": 4209.28,
+      "ok": true
+    },
+    {
+      "id": 1040,
+      "question": "老提醒我重新核验身份",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 89,
+        "total_tokens": 1384
+      },
+      "error": "",
+      "latency_ms": 4636.13,
+      "ok": true
+    },
+    {
+      "id": 1041,
+      "question": "旧联系方式不用了，怎么换成新的",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 48,
+        "total_tokens": 1344
+      },
+      "error": "",
+      "latency_ms": 3870.31,
+      "ok": true
+    },
+    {
+      "id": 1042,
+      "question": "我现在那个联系号码失效了，怎么更新",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 50,
+        "total_tokens": 1347
+      },
+      "error": "",
+      "latency_ms": 4091.91,
+      "ok": true
+    },
+    {
+      "id": 1043,
+      "question": "头像和昵称在哪改",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 79,
+        "total_tokens": 1373
+      },
+      "error": "",
+      "latency_ms": 3839.24,
+      "ok": true
+    },
+    {
+      "id": 1044,
+      "question": "想改个人资料里的联系方式",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 42,
+        "total_tokens": 1336
+      },
+      "error": "",
+      "latency_ms": 3756.83,
+      "ok": true
+    },
+    {
+      "id": 1045,
+      "question": "页面总让我重新验证本人",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 50,
+        "total_tokens": 1344
+      },
+      "error": "",
+      "latency_ms": 3521.07,
+      "ok": true
+    },
+    {
+      "id": 1046,
+      "question": "认证步骤一直过不去",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 61,
+        "total_tokens": 1354
+      },
+      "error": "",
+      "latency_ms": 4311.81,
+      "ok": true
+    },
+    {
+      "id": 1047,
+      "question": "验证码半天收不到",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 92,
+        "total_tokens": 1385
+      },
+      "error": "",
+      "latency_ms": 5348.53,
+      "ok": true
+    },
+    {
+      "id": 1048,
+      "question": "一直提示核验异常",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 79,
+        "total_tokens": 1372
+      },
+      "error": "",
+      "latency_ms": 4948.35,
+      "ok": true
+    },
+    {
+      "id": 1049,
+      "question": "这件外套上身会不会扎，偏宽松还是修身",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 58,
+        "total_tokens": 1356
+      },
+      "error": "",
+      "latency_ms": 4261.45,
+      "ok": true
+    },
+    {
+      "id": 1050,
+      "question": "这个杯子能装多少毫升",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 40,
+        "total_tokens": 1334
+      },
+      "error": "",
+      "latency_ms": 3750.22,
+      "ok": true
+    },
+    {
+      "id": 1051,
+      "question": "这款风扇有米白款吗",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 62,
+        "total_tokens": 1357
+      },
+      "error": "",
+      "latency_ms": 4444.1,
+      "ok": true
+    },
+    {
+      "id": 1052,
+      "question": "这件卫衣是偏厚还是偏薄",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 66,
+        "total_tokens": 1363
+      },
+      "error": "",
+      "latency_ms": 4480.56,
+      "ok": true
+    },
+    {
+      "id": 1053,
+      "question": "这个鼠标和电脑一起用稳不稳",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 51,
+        "total_tokens": 1347
+      },
+      "error": "",
+      "latency_ms": 4237.22,
+      "ok": true
+    },
+    {
+      "id": 1054,
+      "question": "这条裤子更适合春天还是秋天",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 89,
+        "total_tokens": 1383
+      },
+      "error": "",
+      "latency_ms": 4961.79,
+      "ok": true
+    },
+    {
+      "id": 1055,
+      "question": "这件衬衫版型偏大吗",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 61,
+        "total_tokens": 1356
+      },
+      "error": "",
+      "latency_ms": 4437.72,
+      "ok": true
+    },
+    {
+      "id": 1056,
+      "question": "这个锅直径大概多大",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 51,
+        "total_tokens": 1344
+      },
+      "error": "",
+      "latency_ms": 3815.21,
+      "ok": true
+    },
+    {
+      "id": 1057,
+      "question": "这双跑鞋脚感偏软还是偏硬",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 48,
+        "total_tokens": 1347
+      },
+      "error": "",
+      "latency_ms": 4184.27,
+      "ok": true
+    },
+    {
+      "id": 1058,
+      "question": "这个杯盖是金属感还是塑感",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 47,
+        "total_tokens": 1344
+      },
+      "error": "",
+      "latency_ms": 3330.47,
+      "ok": true
+    },
+    {
+      "id": 1059,
+      "question": "这款小夜灯亮度够不够卧室用",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 75,
+        "total_tokens": 1372
+      },
+      "error": "",
+      "latency_ms": 2788.86,
+      "ok": true
+    },
+    {
+      "id": 1060,
+      "question": "这件毛衣容易起球吗",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 92,
+        "total_tokens": 1386
+      },
+      "error": "",
+      "latency_ms": 3547.06,
+      "ok": true
+    },
+    {
+      "id": 1061,
+      "question": "这个收纳箱大概能放几床被子",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 52,
+        "total_tokens": 1349
+      },
+      "error": "",
+      "latency_ms": 3365.37,
+      "ok": true
+    },
+    {
+      "id": 1062,
+      "question": "这款台灯看书会不会刺眼",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 93,
+        "total_tokens": 1388
+      },
+      "error": "",
+      "latency_ms": 3864.42,
+      "ok": true
+    },
+    {
+      "id": 1063,
+      "question": "这件T恤洗后会不会缩水",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 90,
+        "total_tokens": 1386
+      },
+      "error": "",
+      "latency_ms": 4492.2,
+      "ok": true
+    },
+    {
+      "id": 1064,
+      "question": "这个行李箱轮子声音大不大",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 51,
+        "total_tokens": 1346
+      },
+      "error": "",
+      "latency_ms": 4603.96,
+      "ok": true
+    },
+    {
+      "id": 1065,
+      "question": "售后半天不回我，这也太敷衍了吧",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 77,
+        "total_tokens": 1374
+      },
+      "error": "",
+      "latency_ms": 4544.91,
+      "ok": true
+    },
+    {
+      "id": 1066,
+      "question": "处理得让我很火大",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 74,
+        "total_tokens": 1368
+      },
+      "error": "",
+      "latency_ms": 4732.36,
+      "ok": true
+    },
+    {
+      "id": 1067,
+      "question": "这个流程也太折腾人了",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 59,
+        "total_tokens": 1352
+      },
+      "error": "",
+      "latency_ms": 4497.41,
+      "ok": true
+    },
+    {
+      "id": 1068,
+      "question": "刚买两天就坏掉，体验太糟了",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 178,
+        "total_tokens": 1477
+      },
+      "error": "",
+      "latency_ms": 6008.86,
+      "ok": true
+    },
+    {
+      "id": 1069,
+      "question": "你们回消息也太慢了吧",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 59,
+        "total_tokens": 1353
+      },
+      "error": "",
+      "latency_ms": 5530.87,
+      "ok": true
+    },
+    {
+      "id": 1070,
+      "question": "这次处理让我很失望",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 79,
+        "total_tokens": 1372
+      },
+      "error": "",
+      "latency_ms": 4920.68,
+      "ok": true
+    },
+    {
+      "id": 1071,
+      "question": "这服务态度真让人上火",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 114,
+        "total_tokens": 1408
+      },
+      "error": "",
+      "latency_ms": 4509.42,
+      "ok": true
+    },
+    {
+      "id": 1072,
+      "question": "折腾半天问题还没解决",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 74,
+        "total_tokens": 1367
+      },
+      "error": "",
+      "latency_ms": 4792.39,
+      "ok": true
+    },
+    {
+      "id": 1073,
+      "question": "我来回跑了好几次还没弄明白，太折腾人",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1300,
+        "completion_tokens": 96,
+        "total_tokens": 1396
+      },
+      "error": "",
+      "latency_ms": 4134.67,
+      "ok": true
+    },
+    {
+      "id": 1074,
+      "question": "明明是小问题却一直拖着不处理",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 78,
+        "total_tokens": 1374
+      },
+      "error": "",
+      "latency_ms": 4254.19,
+      "ok": true
+    },
+    {
+      "id": 1075,
+      "question": "这次体验太差劲了",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 77,
+        "total_tokens": 1371
+      },
+      "error": "",
+      "latency_ms": 3829.02,
+      "ok": true
+    },
+    {
+      "id": 1076,
+      "question": "联系半天都没人接手",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 58,
+        "total_tokens": 1351
+      },
+      "error": "",
+      "latency_ms": 3906.33,
+      "ok": true
+    },
+    {
+      "id": 1077,
+      "question": "事情一直悬着没人管，真的很恼火",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 80,
+        "total_tokens": 1378
+      },
+      "error": "",
+      "latency_ms": 3863.83,
+      "ok": true
+    },
+    {
+      "id": 1078,
+      "question": "买来没多久就出毛病，心态崩了",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 98,
+        "total_tokens": 1396
+      },
+      "error": "",
+      "latency_ms": 4320.45,
+      "ok": true
+    },
+    {
+      "id": 1079,
+      "question": "整个过程都让人很窝火",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 84,
+        "total_tokens": 1378
+      },
+      "error": "",
+      "latency_ms": 3536.53,
+      "ok": true
+    },
+    {
+      "id": 1080,
+      "question": "处理方式太敷衍了",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 91,
+        "total_tokens": 1384
+      },
+      "error": "",
+      "latency_ms": 3506.75,
+      "ok": true
+    },
+    {
+      "id": 1081,
+      "question": "先这样吧",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 42,
+        "total_tokens": 1333
+      },
+      "error": "",
+      "latency_ms": 3275.03,
+      "ok": true
+    },
+    {
+      "id": 1082,
+      "question": "我再想想",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1290,
+        "completion_tokens": 66,
+        "total_tokens": 1356
+      },
+      "error": "",
+      "latency_ms": 3492.05,
+      "ok": true
+    },
+    {
+      "id": 1083,
+      "question": "回头再看",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1290,
+        "completion_tokens": 59,
+        "total_tokens": 1349
+      },
+      "error": "",
+      "latency_ms": 3586.94,
+      "ok": true
+    },
+    {
+      "id": 1084,
+      "question": "暂时没别的了",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1292,
+        "completion_tokens": 64,
+        "total_tokens": 1356
+      },
+      "error": "",
+      "latency_ms": 3528.37,
+      "ok": true
+    },
+    {
+      "id": 1085,
+      "question": "我先不弄了",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1292,
+        "completion_tokens": 196,
+        "total_tokens": 1488
+      },
+      "error": "",
+      "latency_ms": 4783.95,
+      "ok": true
+    },
+    {
+      "id": 1086,
+      "question": "知道啦",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1290,
+        "completion_tokens": 42,
+        "total_tokens": 1332
+      },
+      "error": "",
+      "latency_ms": 3517.84,
+      "ok": true
+    },
+    {
+      "id": 1087,
+      "question": "我晚点再来",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1292,
+        "completion_tokens": 62,
+        "total_tokens": 1354
+      },
+      "error": "",
+      "latency_ms": 3517.62,
+      "ok": true
+    },
+    {
+      "id": 1088,
+      "question": "先放着吧",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 79,
+        "total_tokens": 1370
+      },
+      "error": "",
+      "latency_ms": 4191.45,
+      "ok": true
+    },
+    {
+      "id": 1089,
+      "question": "打扰了",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1290,
+        "completion_tokens": 36,
+        "total_tokens": 1326
+      },
+      "error": "",
+      "latency_ms": 3340.27,
+      "ok": true
+    },
+    {
+      "id": 1090,
+      "question": "先看到这里",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 72,
+        "total_tokens": 1363
+      },
+      "error": "",
+      "latency_ms": 4296.63,
+      "ok": true
+    },
+    {
+      "id": 1091,
+      "question": "我过会儿再决定",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 72,
+        "total_tokens": 1365
+      },
+      "error": "",
+      "latency_ms": 4235.7,
+      "ok": true
+    },
+    {
+      "id": 1092,
+      "question": "这个先不急",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 78,
+        "total_tokens": 1369
+      },
+      "error": "",
+      "latency_ms": 4010.74,
+      "ok": true
+    },
+    {
+      "id": 1093,
+      "question": "先这样处理吧",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1292,
+        "completion_tokens": 130,
+        "total_tokens": 1422
+      },
+      "error": "",
+      "latency_ms": 5184.55,
+      "ok": true
+    },
+    {
+      "id": 1094,
+      "question": "容我再看看",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 112,
+        "total_tokens": 1403
+      },
+      "error": "",
+      "latency_ms": 4943.87,
+      "ok": true
+    },
+    {
+      "id": 1095,
+      "question": "暂时先不用",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 93,
+        "total_tokens": 1384
+      },
+      "error": "",
+      "latency_ms": 4822.88,
+      "ok": true
+    },
+    {
+      "id": 1096,
+      "question": "我先撤了",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 70,
+        "total_tokens": 1361
+      },
+      "error": "",
+      "latency_ms": 3784.34,
+      "ok": true
+    },
+    {
+      "id": 1097,
+      "question": "先记一下",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 88,
+        "total_tokens": 1379
+      },
+      "error": "",
+      "latency_ms": 5477.87,
+      "ok": true
+    },
+    {
+      "id": 1098,
+      "question": "我自己再研究研究",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1292,
+        "completion_tokens": 78,
+        "total_tokens": 1370
+      },
+      "error": "",
+      "latency_ms": 4912.64,
+      "ok": true
+    },
+    {
+      "id": 1099,
+      "question": "后面再说吧",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 76,
+        "total_tokens": 1367
+      },
+      "error": "",
+      "latency_ms": 4585.46,
+      "ok": true
+    },
+    {
+      "id": 1100,
+      "question": "目前没有别的问题",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1292,
+        "completion_tokens": 58,
+        "total_tokens": 1350
+      },
+      "error": "",
+      "latency_ms": 4726.91,
+      "ok": true
+    },
+    {
+      "id": 2001,
+      "question": "这单我只想撤掉其中一部分，可以吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 83,
+        "total_tokens": 1382
+      },
+      "error": "",
+      "latency_ms": 4846.45,
+      "ok": true
+    },
+    {
+      "id": 2002,
+      "question": "已经开的售后单还能收回来吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 76,
+        "total_tokens": 1372
+      },
+      "error": "",
+      "latency_ms": 4098.67,
+      "ok": true
+    },
+    {
+      "id": 2003,
+      "question": "这笔处理我想只保留一个，其余取消行吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 116,
+        "total_tokens": 1415
+      },
+      "error": "",
+      "latency_ms": 4355.0,
+      "ok": true
+    },
+    {
+      "id": 2004,
+      "question": "后面又不想继续这次售后了，能恢复原样吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1301,
+        "completion_tokens": 79,
+        "total_tokens": 1380
+      },
+      "error": "",
+      "latency_ms": 4613.76,
+      "ok": true
+    },
+    {
+      "id": 2005,
+      "question": "这单只动其中一件，别的别处理，可以吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1301,
+        "completion_tokens": 101,
+        "total_tokens": 1402
+      },
+      "error": "",
+      "latency_ms": 4403.19,
+      "ok": true
+    },
+    {
+      "id": 2006,
+      "question": "我后悔发起这个售后了，还能改回去吗",
+      "label": "退款退货",
+      "predicted_category": "退款退货",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 85,
+        "total_tokens": 1384
+      },
+      "error": "",
+      "latency_ms": 3841.16,
+      "ok": true
+    },
+    {
+      "id": 2007,
+      "question": "门牌写错了一位，现在改还来得及吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 61,
+        "total_tokens": 1360
+      },
+      "error": "",
+      "latency_ms": 3076.91,
+      "ok": true
+    },
+    {
+      "id": 2008,
+      "question": "收件信息少写了一行，还能补上吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 73,
+        "total_tokens": 1372
+      },
+      "error": "",
+      "latency_ms": 3840.68,
+      "ok": true
+    },
+    {
+      "id": 2009,
+      "question": "送过来前我想换个收件地点，可以吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1299,
+        "completion_tokens": 60,
+        "total_tokens": 1359
+      },
+      "error": "",
+      "latency_ms": 3715.08,
+      "ok": true
+    },
+    {
+      "id": 2010,
+      "question": "现在把楼栋号改掉还来得及吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 66,
+        "total_tokens": 1364
+      },
+      "error": "",
+      "latency_ms": 4881.04,
+      "ok": true
+    },
+    {
+      "id": 2011,
+      "question": "配送前能把地址末尾那段修一下吗",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 52,
+        "total_tokens": 1349
+      },
+      "error": "",
+      "latency_ms": 4071.14,
+      "ok": true
+    },
+    {
+      "id": 2012,
+      "question": "我把收件门牌填错了，怎么补救",
+      "label": "物流查询",
+      "predicted_category": "物流查询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 59,
+        "total_tokens": 1357
+      },
+      "error": "",
+      "latency_ms": 3792.22,
+      "ok": true
+    },
+    {
+      "id": 2013,
+      "question": "整个处理过程都让我有点崩溃",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 300,
+        "total_tokens": 1595
+      },
+      "error": "",
+      "latency_ms": 7422.0,
+      "ok": true
+    },
+    {
+      "id": 2014,
+      "question": "这次售后体验真的让我很无语",
+      "label": "投诉建议",
+      "predicted_category": "投诉建议",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 87,
+        "total_tokens": 1382
+      },
+      "error": "",
+      "latency_ms": 4346.59,
+      "ok": true
+    },
+    {
+      "id": 2015,
+      "question": "这个版本更适合通勤还是户外",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1295,
+        "completion_tokens": 45,
+        "total_tokens": 1340
+      },
+      "error": "",
+      "latency_ms": 3433.34,
+      "ok": true
+    },
+    {
+      "id": 2016,
+      "question": "这款穿起来更贴身还是更松一点",
+      "label": "商品咨询",
+      "predicted_category": "商品咨询",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 43,
+        "total_tokens": 1340
+      },
+      "error": "",
+      "latency_ms": 4329.84,
+      "ok": true
+    },
+    {
+      "id": 2017,
+      "question": "旧号码作废了，身份校验怎么继续",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1298,
+        "completion_tokens": 55,
+        "total_tokens": 1353
+      },
+      "error": "",
+      "latency_ms": 3924.45,
+      "ok": true
+    },
+    {
+      "id": 2018,
+      "question": "联系信息换了以后，验证流程要怎么走",
+      "label": "账号问题",
+      "predicted_category": "账号问题",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 77,
+        "total_tokens": 1374
+      },
+      "error": "",
+      "latency_ms": 4135.02,
+      "ok": true
+    },
+    {
+      "id": 2019,
+      "question": "我再想想吧",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1291,
+        "completion_tokens": 64,
+        "total_tokens": 1355
+      },
+      "error": "",
+      "latency_ms": 4120.13,
+      "ok": true
+    },
+    {
+      "id": 2020,
+      "question": "先这样，回头再说",
+      "label": "其他",
+      "predicted_category": "其他",
+      "source": "llm",
+      "reason": "llm fallback",
+      "matched_rule": "llm_fallback",
+      "attempt": 1,
+      "breaker_open": false,
+      "usage": {
+        "prompt_tokens": 1293,
+        "completion_tokens": 53,
+        "total_tokens": 1346
+      },
+      "error": "",
+      "latency_ms": 3442.18,
+      "ok": true
+    }
+  ]
+}
