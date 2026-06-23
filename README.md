@@ -17,6 +17,7 @@
 - [第二章：Prompt 改进与评测](#第二章prompt-改进与评测)
 - [第三章：工程化改进](#第三章工程化改进)
 - [第四章：如何运行与 AI 使用情况](#第四章如何运行与-ai-使用情况)
+- [第五章：截图与证据](#第五章截图与证据)
 - [附：关键文件](#附关键文件)
 
 ## 仓库导航
@@ -659,3 +660,32 @@ py -m uvicorn app:app --host 127.0.0.1 --port 8017
 - 压力测试：`llm_stress_test.py`
 - Prompt 演进表：`docs/prompt_evolution_table_20260623.md`
 - 配置示例：`config.example.json`
+
+---
+
+## 第五章：截图与证据
+
+仓库内已单独归档 `pictures/` 目录，便于提交时直接截图或打包引用。文件命名按内容分组，评审可以快速对应到“测试用例截图 / 数据结果截图 / AI 工具使用截图”三类证据。
+
+### 5.1 测试用例截图
+
+- `pictures/01_test_case_01.png`
+- `pictures/02_test_case_02.png`
+- `pictures/03_test_case_03.png`
+
+### 5.2 数据结果截图
+
+- `pictures/04_data_result_01.png`
+- `pictures/05_data_result_02.png`
+- `pictures/06_data_result_03.png`
+
+### 5.3 AI 工具使用截图
+
+- `pictures/07_ai_tool_01.png`
+- `pictures/08_ai_tool_02.png`
+- `pictures/09_ai_tool_03.png`
+
+### 5.4 使用说明
+
+- 这 9 张图分别对应测评过程中的测试输入、分类结果、评测对比和 AI 工具协作过程。
+- 若提交时需要附图，建议按本章顺序依次插入，能和正文中的 `v1 -> v2 -> v3` 演进脉络一一对应。
